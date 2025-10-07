@@ -16,7 +16,7 @@ metadata:
     app: app1
 ```
 
-Where `app1` is the label defined for our pod that'll be mapped to the selector section in our [ClusterIP Manifest File](clusterip.md) like so:
+Where `app1` is the label defined for our pod that'll be mapped to the selector section in our [ClusterIP Manifest File](ClusterIP.md) like so:
 ```yaml
 selector:
   app: app1

@@ -3,7 +3,7 @@ tags:
   - k8s/pods
   - k8s/containers
 ---
-Are [Containers](containers.md) that'll spin up before the app container [Pod](pod.md) to help with initializing and setting up the environment for the main pods. These can have a restart policy to allow failed init containers to be tried again, and once they are done, they'll spin down.
+Are [Containers](Containers.md) that'll spin up before the app container [Pod](Pod.md) to help with initializing and setting up the environment for the main pods. These can have a restart policy to allow failed init containers to be tried again, and once they are done, they'll spin down.
 
 When a pod is spun up with an init container, the status field will show `Init: 0/1` until that init container deploys successfully. 
 

@@ -4,7 +4,7 @@ tags:
   - k8s/monitoring
   - k8s/scheduler
 ---
-The scheduler watches for [Pod](pod.md) that have no assigned [Node](node.md) (i.e., newly created Pods). It selects a suitable node in the cluster where each Pod should run, based on resource requirements, policies, and constraints. Once the scheduler makes its decision, it updates the Pod's specification to indicate which node should run the Pod. 
+The scheduler watches for [Pod](Pod.md) that have no assigned [Node](Node.md) (i.e., newly created Pods). It selects a suitable node in the cluster where each Pod should run, based on resource requirements, policies, and constraints. Once the scheduler makes its decision, it updates the Pod's specification to indicate which node should run the Pod. 
 
 ## When Scheduler Implements Changes
 

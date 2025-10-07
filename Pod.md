@@ -33,7 +33,7 @@ command: ['sh', '-c', 'while true; do date; sleep 3; done'
 
 ## imagePullPolicy
 
-You have the option to specify the image pull policy, which will tell it to either always pull the [Images](images.md) (ensures it has the latest updates) or just pull if it does not exist. 
+You have the option to specify the image pull policy, which will tell it to either always pull the [Images](Images.md) (ensures it has the latest updates) or just pull if it does not exist. 
 
 ## Default Restart Policy
 

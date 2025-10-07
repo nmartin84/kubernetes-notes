@@ -9,7 +9,7 @@ A Persistent Volume Claim (PVC) is a request for storage by a user. It is simila
 
 ## Dynamic Provisioning
 
-When a PVC is created, a corresponding PV can be dynamically provisioned through a [Storage Class](storage-class.md), depending on the configuration. This decouples the task of configuring underlying storage from the usage of storage in Pods.
+When a PVC is created, a corresponding PV can be dynamically provisioned through a [Storage Class](Storage Class.md), depending on the configuration. This decouples the task of configuring underlying storage from the usage of storage in Pods.
 
 ## Usage
 
@@ -21,7 +21,7 @@ Can be defined by specifying the `LimitRange` for the PVC.
 
 ## Setting default PVC Setting
 
-A default PVC setting cannot be define but you can set a default [Storage Class](storage-class.md) so PVC's without a storage class get auto-assigned one.
+A default PVC setting cannot be define but you can set a default [Storage Class](Storage Class.md) so PVC's without a storage class get auto-assigned one.
 
 ```yaml
 apiVersion: storage.k8s.io/v1

@@ -3,7 +3,7 @@ tags:
   - k8s/monitoring
   - k8s/availability
 ---
-Self-healing is a key feature of Kubernetes ( [High Availability Cluster](high-availability-cluster.md) ) that ensures deployed applications are always running and healthy.
+Self-healing is a key feature of Kubernetes ( [High Availability Cluster](High Availability Cluster.md) ) that ensures deployed applications are always running and healthy.
 
 Kubernetes continuously monitors the state of Pods and other deployment objects. If a Pod fails due to hardware failure or any other reason, Kubernetes automatically restarts the failed Pods, replaces them, reschedules them, and even kills Pods that do not respond to user-defined health checks.
 

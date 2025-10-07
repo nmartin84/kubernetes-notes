@@ -2,7 +2,7 @@
 tags:
   - k8s/replicas
 ---
-In Kubernetes, a pod replica refers to a copy of a [Pod](pod.md) that runs simultaneously to ensure high availability, scalability, and redundancy of applications. Replicas are managed by controllers such as Deployments, ReplicaSets, or StatefulSets.
+In Kubernetes, a pod replica refers to a copy of a [Pod](Pod.md) that runs simultaneously to ensure high availability, scalability, and redundancy of applications. Replicas are managed by controllers such as Deployments, ReplicaSets, or StatefulSets.
 
 - **High Availability:** Replicas ensure that if one or more pods fail, the application remains accessible. This is crucial for maintaining service continuity in production environments.
 - **Load Distribution:** Multiple replicas of a pod can share the load of incoming network traffic, improving the application's responsiveness and handling capacity.
@@ -21,4 +21,4 @@ Similar to Deployments but for applications that require persistent storage and 
 ## Scaling
 
 - Pods can be manually scaled by changing the number of replicas in the deployment configuration.
-- Automatic scaling can be achieved using the [Horizontal Pod Autoscaler](horizontal-pod-autoscaler.md), which adjusts the number of replicas based on real-time metrics like CPU usage or custom metrics.
+- Automatic scaling can be achieved using the [Horizontal Pod Autoscaler](Horizontal Pod Autoscaler.md), which adjusts the number of replicas based on real-time metrics like CPU usage or custom metrics.

@@ -12,7 +12,7 @@ kubectl create secret generic db-creds --from-file=./username.txt --from-file=./
 
 ## Manifest File
 
-When defining [Pod](pod.md) you can utilize this method to map secrets to the pod:
+When defining [Pod](Pod.md) you can utilize this method to map secrets to the pod:
 
 ```yaml
 apiVersion: v1

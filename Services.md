@@ -7,10 +7,10 @@ Kubernetes Services provide a stable network endpoint for a logical set of Pods,
 
 
 > [!NOTE] Available Services
-> - [NodePort](nodeport.md)
-> - [ClusterIP](clusterip.md)
-> - [LoadBalancer](loadbalancer.md)
-> - [Ingress](ingress.md)
+> - [NodePort](NodePort.md)
+> - [ClusterIP](ClusterIP.md)
+> - [LoadBalancer](LoadBalancer.md)
+> - [Ingress](Ingress.md)
 
 
 ## Managing Deployed Services

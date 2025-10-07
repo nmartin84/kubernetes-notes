@@ -2,7 +2,7 @@
 tags:
   - k8s/storage
 ---
-A Persistent Volume (PV) is a Persistent Volume Resources in [Clusters](clusters.md) that has been provisioned by an administrator or dynamically provisioned using a [Storage Class](storage-class.md). It is a piece of storage in the cluster that has been provisioned independently of the usage of individual [Pod](pod.md).
+A Persistent Volume (PV) is a Persistent Volume Resources in [Clusters](Clusters.md) that has been provisioned by an administrator or dynamically provisioned using a [Storage Class](Storage Class.md). It is a piece of storage in the cluster that has been provisioned independently of the usage of individual [Pod](Pod.md).
 
 - A **cluster-wide resource** that represents a piece of storage already provisioned and made available to the cluster.
 - PVs are volume plugins like Volumes but have a lifecycle independent of any individual Pod that uses the PV.

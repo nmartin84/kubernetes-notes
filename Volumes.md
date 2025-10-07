@@ -11,11 +11,11 @@ By default, anything a container writes inside its filesystem disappears when:
 Volumes solve this by providing **storage that outlives containers** and can even be shared between them.
 
 > [!INFO] Volume Types
-> - [EmptyDir](emptydir.md)
-> - [hostPath](hostpath.md)
-> - [ConfigMaps](configmaps.md) / [Secrets](secrets.md)
-> - [Persistent Volume Claim](persistent-volume-claim.md)
-> - [networkStorage](networkstorage.md)
+> - [EmptyDir](EmptyDir.md)
+> - [hostPath](hostPath.md)
+> - [ConfigMaps](ConfigMaps.md) / [Secrets](Secrets.md)
+> - [Persistent Volume Claim](Persistent Volume Claim.md)
+> - [networkStorage](networkStorage.md)
 
 ## Key Points About Volumes
 

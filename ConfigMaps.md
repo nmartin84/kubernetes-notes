@@ -29,7 +29,7 @@ data:
 > - `metadata: -> name:` is how this map will be targeted via the selector
 > - `data: -> database_host:` is an example of a key that you'll need to pass to your app deployment.
 
-Define Config Map in [Pod](pod.md) Manifest File:
+Define Config Map in [Pod](Pod.md) Manifest File:
 ```yaml
 apiVersion: v1
 kind: Pod

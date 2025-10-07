@@ -3,7 +3,7 @@ tags:
   - k8s/permissions
   - k8s/networking
 ---
-Allows restricting network communication between pods or even possibly nodes. Policies apply to the pods and controls the inbound & outbound traffic for a [Pod](pod.md).
+Allows restricting network communication between pods or even possibly nodes. Policies apply to the pods and controls the inbound & outbound traffic for a [Pod](Pod.md).
 
 ## Network Policy Endpoints
 

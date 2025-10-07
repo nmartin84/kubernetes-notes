@@ -10,4 +10,4 @@ A Kubernetes cluster is a collection of interconnected machines, known as nodes,
 
 ## Config Files
 
-[Clusters](clusters.md) config files can be located in the `/etc/kubernetes` directory on the worker plane node. This will include the default config for `kubectl` but also include other things like the [Scheduler](scheduler.md) config file.
+[Clusters](Clusters.md) config files can be located in the `/etc/kubernetes` directory on the worker plane node. This will include the default config for `kubectl` but also include other things like the [Scheduler](Scheduler.md) config file.

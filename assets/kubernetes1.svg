@@ -1,0 +1,241 @@
+<svg viewBox="0 0 900 650" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kubernetes Deployment YAML File with Ingress Controller for Externally Accessible Web Application">
+  <rect x="0" y="0" width="900" height="650" fill="#ffffff"/>
+
+  <!-- Header -->
+  <text x="450" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#0f172a">
+    Kubernetes YAML: External Web App with Ingress
+  </text>
+  <text x="450" y="64" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#475569">
+    Deployment runs pods, Service groups them, Ingress defines routes, and the Ingress Controller handles traffic
+  </text>
+
+  <!-- Outer boundary -->
+  <rect x="35" y="90" width="830" height="500" rx="24" fill="#f8fafc" stroke="#2563eb" stroke-width="2.5"/>
+  <text x="65" y="122" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#0f172a">
+    Manifest to Externally Reachable Web Application
+  </text>
+
+  <!-- YAML Manifest -->
+  <rect x="60" y="145" width="245" height="365" rx="18" fill="#fef3c7" stroke="#d97706" stroke-width="2.5"/>
+  <text x="182" y="176" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#0f172a">
+    web-app.yaml
+  </text>
+
+  <rect x="83" y="198" width="199" height="285" rx="12" fill="#ffffff" stroke="#f59e0b" stroke-width="1.5"/>
+
+  <text x="100" y="222" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" fill="#0f172a">kind:</text>
+  <text x="145" y="222" font-family="Arial, sans-serif" font-size="11.5" fill="#334155">Deployment</text>
+
+  <text x="100" y="244" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" fill="#0f172a">replicas:</text>
+  <text x="165" y="244" font-family="Arial, sans-serif" font-size="11.5" fill="#334155">3</text>
+
+  <text x="100" y="266" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" fill="#0f172a">selector:</text>
+  <text x="165" y="266" font-family="Arial, sans-serif" font-size="11.5" fill="#334155">app: web</text>
+
+  <text x="100" y="288" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" fill="#0f172a">containerPort:</text>
+  <text x="200" y="288" font-family="Arial, sans-serif" font-size="11.5" fill="#334155">8080</text>
+
+  <line x1="100" y1="309" x2="265" y2="309" stroke="#e2e8f0" stroke-width="1"/>
+
+  <text x="100" y="333" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" fill="#0f172a">kind:</text>
+  <text x="145" y="333" font-family="Arial, sans-serif" font-size="11.5" fill="#334155">Service</text>
+
+  <text x="100" y="355" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" fill="#0f172a">type:</text>
+  <text x="145" y="355" font-family="Arial, sans-serif" font-size="11.5" fill="#334155">ClusterIP</text>
+
+  <text x="100" y="377" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" fill="#0f172a">port:</text>
+  <text x="145" y="377" font-family="Arial, sans-serif" font-size="11.5" fill="#334155">80</text>
+
+  <text x="100" y="399" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" fill="#0f172a">targetPort:</text>
+  <text x="180" y="399" font-family="Arial, sans-serif" font-size="11.5" fill="#334155">8080</text>
+
+  <line x1="100" y1="420" x2="265" y2="420" stroke="#e2e8f0" stroke-width="1"/>
+
+  <text x="100" y="444" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" fill="#0f172a">kind:</text>
+  <text x="145" y="444" font-family="Arial, sans-serif" font-size="11.5" fill="#334155">Ingress</text>
+
+  <text x="100" y="466" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" fill="#0f172a">host:</text>
+  <text x="145" y="466" font-family="Arial, sans-serif" font-size="11.5" fill="#334155">app.example.com</text>
+
+  <!-- kubectl -->
+  <rect x="355" y="150" width="160" height="78" rx="16" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+  <text x="435" y="179" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#0f172a">
+    kubectl apply
+  </text>
+  <text x="435" y="202" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#334155">
+    submits manifest
+  </text>
+  <text x="435" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#475569">
+    to the cluster
+  </text>
+
+  <!-- API server -->
+  <rect x="625" y="150" width="170" height="78" rx="16" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="710" y="179" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#0f172a">
+    API Server
+  </text>
+  <text x="710" y="202" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#334155">
+    validates YAML
+  </text>
+  <text x="710" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#475569">
+    stores desired state
+  </text>
+
+  <!-- Deployment -->
+  <rect x="350" y="280" width="175" height="82" rx="18" fill="#dcfce7" stroke="#16a34a" stroke-width="2.3"/>
+  <text x="437" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#0f172a">
+    Deployment
+  </text>
+  <text x="437" y="333" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#334155">
+    maintains replicas
+  </text>
+  <text x="437" y="351" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#475569">
+    creates web pods
+  </text>
+
+  <!-- Service -->
+  <rect x="625" y="280" width="175" height="82" rx="18" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.3"/>
+  <text x="712" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#0f172a">
+    Service
+  </text>
+  <text x="712" y="333" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#334155">
+    type: ClusterIP
+  </text>
+  <text x="712" y="351" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#475569">
+    selects app=web pods
+  </text>
+
+  <!-- Ingress Resource -->
+  <rect x="625" y="400" width="175" height="78" rx="18" fill="#fef3c7" stroke="#d97706" stroke-width="2.3"/>
+  <text x="712" y="428" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#0f172a">
+    Ingress
+  </text>
+  <text x="712" y="451" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#334155">
+    host/path routing
+  </text>
+  <text x="712" y="469" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#475569">
+    points to Service
+  </text>
+
+  <!-- Pods -->
+  <rect x="350" y="400" width="175" height="78" rx="18" fill="#fee2e2" stroke="#dc2626" stroke-width="2.3"/>
+  <text x="437" y="428" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#0f172a">
+    Web App Pods
+  </text>
+  <text x="437" y="451" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#334155">
+    3 replicas
+  </text>
+  <text x="437" y="469" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#475569">
+    listen on 8080
+  </text>
+
+  <!-- External traffic path -->
+  <rect x="80" y="535" width="145" height="38" rx="17" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+  <text x="152" y="559" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">
+    External Client
+  </text>
+
+  <rect x="275" y="535" width="145" height="38" rx="17" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+  <text x="347" y="559" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">
+    Load Balancer
+  </text>
+
+  <rect x="470" y="525" width="170" height="58" rx="18" fill="#dbeafe" stroke="#2563eb" stroke-width="2.3"/>
+  <text x="555" y="548" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a">
+    Ingress Controller
+  </text>
+  <text x="555" y="567" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#475569">
+    NGINX, Traefik, cloud
+  </text>
+
+  <rect x="690" y="535" width="120" height="38" rx="17" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="750" y="559" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">
+    Web App
+  </text>
+
+  <!-- Bottom note -->
+  <rect x="185" y="600" width="530" height="30" rx="15" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+  <text x="450" y="620" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a">
+    Ingress is the routing rule; the Ingress Controller actually receives and forwards traffic
+  </text>
+
+  <!-- YAML to kubectl -->
+  <line x1="305" y1="189" x2="355" y2="189" stroke="#64748b" stroke-width="2.2"/>
+  <polygon points="355,189 344,183 344,195" fill="#64748b"/>
+  <text x="330" y="176" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#475569">
+    apply
+  </text>
+
+  <!-- kubectl to API -->
+  <line x1="515" y1="189" x2="625" y2="189" stroke="#64748b" stroke-width="2.2"/>
+  <polygon points="625,189 614,183 614,195" fill="#64748b"/>
+  <text x="570" y="176" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#475569">
+    request
+  </text>
+
+  <!-- API creates Deployment -->
+  <path d="M675 228 C610 255 535 270 525 305" fill="none" stroke="#64748b" stroke-width="2.2"/>
+  <polygon points="525,305 522,293 534,298" fill="#64748b"/>
+  <text x="600" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#475569">
+    creates workload
+  </text>
+
+  <!-- API creates Service -->
+  <line x1="710" y1="228" x2="710" y2="280" stroke="#64748b" stroke-width="2.2"/>
+  <polygon points="710,280 704,269 716,269" fill="#64748b"/>
+
+  <!-- API creates Ingress -->
+  <path d="M748 228 C810 290 805 355 745 400" fill="none" stroke="#64748b" stroke-width="2.2"/>
+  <polygon points="745,400 748,388 757,396" fill="#64748b"/>
+  <text x="806" y="328" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#475569">
+    creates route
+  </text>
+
+  <!-- Deployment to Pods -->
+  <line x1="437" y1="362" x2="437" y2="400" stroke="#64748b" stroke-width="2.2"/>
+  <polygon points="437,400 431,389 443,389" fill="#64748b"/>
+  <text x="485" y="384" font-family="Arial, sans-serif" font-size="11" fill="#475569">
+    spawns
+  </text>
+
+  <!-- Service selects Pods -->
+  <path d="M625 321 C575 335 540 370 500 400" fill="none" stroke="#64748b" stroke-width="2.2"/>
+  <polygon points="500,400 505,389 512,399" fill="#64748b"/>
+  <text x="555" y="370" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#475569">
+    selects
+  </text>
+
+  <!-- Ingress points to Service -->
+  <line x1="712" y1="400" x2="712" y2="362" stroke="#94a3b8" stroke-width="2" stroke-dasharray="6 6"/>
+  <polygon points="712,362 706,373 718,373" fill="#94a3b8"/>
+  <text x="758" y="386" font-family="Arial, sans-serif" font-size="11" fill="#475569">
+    backend
+  </text>
+
+  <!-- Ingress Controller watches Ingress -->
+  <path d="M590 525 C610 500 645 485 685 478" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="6 6"/>
+  <polygon points="685,478 674,474 676,486" fill="#94a3b8"/>
+  <text x="555" y="508" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#475569">
+    watches Ingress rules
+  </text>
+
+  <!-- External traffic arrows -->
+  <line x1="225" y1="554" x2="275" y2="554" stroke="#64748b" stroke-width="2.2"/>
+  <polygon points="275,554 264,548 264,560" fill="#64748b"/>
+
+  <line x1="420" y1="554" x2="470" y2="554" stroke="#64748b" stroke-width="2.2"/>
+  <polygon points="470,554 459,548 459,560" fill="#64748b"/>
+
+  <line x1="640" y1="554" x2="690" y2="554" stroke="#64748b" stroke-width="2.2"/>
+  <polygon points="690,554 679,548 679,560" fill="#64748b"/>
+
+  <!-- Controller routes to service / app -->
+  <path d="M610 525 C640 500 675 488 700 478" fill="none" stroke="#64748b" stroke-width="2.2"/>
+  <polygon points="700,478 689,474 691,486" fill="#64748b"/>
+  <text x="705" y="518" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#475569">
+    routes traffic
+  </text>
+
+  <!-- Footer -->
+  <line x1="70" y1="640" x2="830" y2="640" stroke="#cbd5e1" stroke-width="1"/>
+</svg>
